@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/hero-styles.css" /> -->
+  </head>
+
+  <body>
+    <section class="hero">
+      <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+      <!-- Slider -->
+      <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img alt="#" src="./images/hero1x.jpeg"
+            srcset="./images/hero1-1x.jpeg 1x, ./images/hero1-2x.jpeg 2x" />
+            <p>1 ----- 5</p>
+          </div>
+          <div class="swiper-slide">
+            <img alt="#" 
+            srcset="./images/hero2-1x.jpeg 1x, ./images/hero2-2x.jpeg 2x"
+            src="./images/hero2-1x.jpeg" />
+            <p>2 ----- 5</p>
+          </div>
+          <div class="swiper-slide">
+            <img alt="#" 
+            srcset="./images/hero3-1x.jpeg 1x, ./images/hero3-2x.jpeg 2x"
+            src="./images/hero3-1x.jpeg" />
+            <p>3 ----- 5</p>
+          </div>
+          <div class="swiper-slide">
+            <img alt="#" 
+            srcset="./images/hero4-1x.jpeg 1x, ./images/hero4-2x.jpeg 2x"
+            src="./images/hero4-1x.jpeg" />
+            <p>4 ----- 5</p>
+          </div>
+          <div class="swiper-slide">
+            <img alt="#" 
+            srcset="./images/hero5-1x.jpeg 1x, ./images/hero5-2x.jpeg 2x"
+            src="./images/hero5-1x.jpeg" />
+             <p>5 <svg width="32"><use class="icon" href="./images/sprite.svg#icon-hero-vector"></use></svg> 5</p>
+          </div>
+        </div>
+
+     <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+      
+  <div class="swiper-buttons">
+        <!-- Change nav-buttons to classes to avoid basic styles -->
+        <div class="button-prev"><button>1</button></div>
+        <div class="button-next"><button>2</button></div>
+      </div>
+      <!-- Slider -->
+     
+      <p class="hero-text">
+        Our watches are not just timepieces, but also an expression of your
+        personality and lifestyle. From classic designs to modern ones, we have
+        a watch to suit every taste and occasion.
+      </p>
+    </section>
+    ?
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
