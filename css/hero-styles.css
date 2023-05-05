@@ -37,6 +37,9 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.hero-text-desk {
+  display: none;
+}
 .swiper {
   max-width: 266px;
 
@@ -80,7 +83,7 @@ img {
 .swiper-btn {
   width: 32px;
   height: 32px;
-
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   background-color: transparent;
@@ -95,7 +98,13 @@ img {
   display: flex;
   align-items: center;
   height: 18px;
-  margin-top: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
 }
 
 .swiper-slide {
@@ -106,4 +115,12 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+.swiper-btn:is(:hover, :focus) .swiper-btn-icon {
+  color: #ffffff;
+  stroke: #ffffff;
+}
+.hero-img-desk {
+  display: none;
 }
