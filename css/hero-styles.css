@@ -23,7 +23,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  /*width: 100%;*/
+  width: 100%;
 }
 .container {
   max-width: 375px;
@@ -92,6 +92,8 @@ img {
 .swiper-btn-icon {
   display: flex;
   stroke: rgba(255, 255, 255, 0.5);
+  width: 18px;
+  height: 18px;
 }
 
 .slide-number {
@@ -111,16 +113,20 @@ img {
   margin-right: auto;
 }
 
-.try {
+.buttons-numbers {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.swiper-btn:is(:hover, :focus) .swiper-btn-icon {
+.swiper-buttons:is(:hover, :focus) .swiper-btn-icon {
   color: #ffffff;
   stroke: #ffffff;
 }
-.hero-img-desk {
+.hero-desk-img {
   display: none;
+}
+
+.line-svg {
+  width: 32px;
 }
